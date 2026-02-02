@@ -52,6 +52,7 @@ jobs:
           - mipsel_74kc
           - mipsel_mips32
           - x86_64
+          - x86_32
         sdk:
           - openwrt-22.03
           - SNAPSHOT
