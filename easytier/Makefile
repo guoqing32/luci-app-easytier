@@ -30,7 +30,9 @@ endif
 ifeq ($(ARCH),x86_64)
 	APP_ARCH:=x86_64
 endif
-
+ifeq ($(ARCH),x86_32)
+	APP_ARCH:=x86_32
+endif
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
